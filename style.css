@@ -13,6 +13,10 @@ body{
 
 /* general class */
 
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* specific class */
 
@@ -23,7 +27,7 @@ header h1 {
 }
 
 main{
-    width: 450px;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -33,6 +37,20 @@ ul{
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    background-color: salmon;
 }
 
+ul li {
+    padding: 1rem;
+    border: solid 2px white;
+    width: 100%;
+}
 
+span.barred{
+    text-decoration: line-through;
+}
+
+span.x-button i:hover{
+    color: aqua;
+    font-size: 1.2rem;
+}
