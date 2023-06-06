@@ -1,5 +1,38 @@
+/* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* tag class */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* general class */
+
+
+/* specific class */
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+main{
+    width: 450px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+

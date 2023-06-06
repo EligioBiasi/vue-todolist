@@ -1,9 +1,34 @@
 const { createApp } = Vue
 
+// Rifare l'esercizio della to do list. Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
+// text, una stringa che indica il testo del todo
+// done, un booleano (true/false) che indica se il todo è stato fatto oppure no
+
 createApp({
   data() {
     return {
-      
+      todolist:[
+        {   
+            text:'spesa',
+            done:false,
+        },
+        {   
+            text:'calcietto',
+            done:false,
+        },
+        {   
+            text:'leggere',
+            done:false,
+        },
+        {   
+            text:'vedere film',
+            done:false,
+        },
+        {   
+            text:'andare dal barbiere',
+            done:false,
+        },
+      ]
     }
   },
 
@@ -14,9 +39,7 @@ createApp({
 
 }).mount('#app');
 
-// Rifare l'esercizio della to do list. Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
-// text, una stringa che indica il testo del todo
-// done, un booleano (true/false) che indica se il todo è stato fatto oppure no
+
 
 
 
