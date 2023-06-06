@@ -41,6 +41,12 @@
                 </ul>
             </div>
         </main>
+        <footer>
+            <div>
+                <input @keyup.enter="addTodo" v-model="newItem" type="text">
+                <button @click="addTodo" type="button">Aggiungi!</button>
+            </div>
+        </footer>
     </div>
 
 
