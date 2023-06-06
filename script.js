@@ -47,22 +47,23 @@ createApp({
   methods: {
     removeListItem(itemIndex){
         this.todolist.splice(itemIndex, 1)
-    }
-  },
+    },
 
     addTodo(){
-    let cleanedTodo = this.newItem.trim();
-    if(cleanedTodo.length >= 5) {
-        this.todolist.unshift({
-            text: this.newItem,
-            done: false,
-        });
-        this.newItem = '';
-        this.inputError = false
-    } else {
-        this.inputError = true;
-    }
-},
+        let cleanedTodo = this.newItem.trim();
+        if(cleanedTodo.length >= 5) {
+            this.todolist.unshift({
+                text: this.newItem,
+                done: false,
+            });
+            this.newItem = '';
+            this.inputError = false
+        } else {
+            this.inputError = true;
+        }
+  },
+
+  }
 
 }).mount('#app');
 
